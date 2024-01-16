@@ -1,0 +1,113 @@
+   /* Tambahkan gaya CSS tambahan sesuai kebutuhan */
+   body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .side-bar {
+    height: 100%;
+    width: 250px;
+    left: -250px;
+    background-color: #211e1e;
+    position: fixed;
+    overflow-y: auto;
+    transition: 0.5s;
+  }
+
+  .side-bar.active {
+    width: 250px;
+    height: 100%;
+  }
+
+  header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #211e1e;
+    background-color: #211e1e;
+  }
+
+  header img {
+    width: 80px;
+    margin: 8px;
+    margin-left: 40px;
+    border-radius: 50%;
+    border: 3px solid #b4b8b9;
+  }
+
+  header h1 {
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    padding-bottom: 13px;
+    font-family: monospace;
+    letter-spacing: 2px;
+  }
+
+  .menu {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .menu a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 40px;
+
+  }
+
+  .menu i {
+    margin-right: 15px;
+  }
+
+  .sub-menu {
+    margin-left: 20px;
+    background: #211e1e;
+    display: none;
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s esae;
+  }
+
+  .sub-menu a {
+    margin-bottom: 5px;
+    background: #211e1e;
+    display: none;
+  }
+  .menu-btn{
+    position: absolute;
+    color: #211e1e;
+    font-size: 35px;
+    cursor: pointer;
+    margin: 25px;
+  }
+  .side-bar.active{
+    left: 0;
+  }
+  .side-bar::-webkit-scrollbar{
+    width: 0px;
+  }
+  .item .sub-menu a{
+    padding-left: 80px;
+  }
+  
+  .side-bar {
+
+    .menu a:hover {
+    background-color: #b4b7ba; /* Change this to the desired background color on hover */
+    color: #fff; /* Change this to the desired text color on hover */
+  }
+}
+
+.chart-container {
+  border: 3px solid #333; /* Warna dan ketebalan bingkai */
+  padding: 10px; /* Jarak dalam dari bingkai ke grafik */
+  margin-bottom: 20px; /* Jarak bawah antara grafik */
+}
+
